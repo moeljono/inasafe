@@ -16,6 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Language: id_ID\n"
+"X-Source-Language: en\n"
 
 msgid "Hello!"
 msgstr "Hi!"
@@ -412,8 +415,7 @@ msgstr "Gempa dampak terhadap populasi"
 msgid "DKI buildings"
 msgstr "Bangunan DKI"
 
-#: safe/common/dynamic_translations.py:60
-#: safe/common/dynamic_translations.py:61
+#: safe/common/dynamic_translations.py:60 safe/common/dynamic_translations.py:61
 msgid "Jakarta 2007 flood"
 msgstr "Banjir di Jakarta seperti tahun 2007"
 
@@ -754,8 +756,8 @@ msgstr ""
 #: safe/impact_functions/core.py:356
 #, python-format
 msgid ""
-"In the event of <i>%(hazard)s</i> how many <i>%(exposure)s</i> might <i>"
-"%(impact)s</i>"
+"In the event of <i>%(hazard)s</i> how many <i>%(exposure)s</i> might "
+"<i>%(impact)s</i>"
 msgstr ""
 "Apabila terjadi <i>%(hazard)s</i> berapa banyak <i>%(exposure)s</i> yang "
 "mungkin <i>%(impact)s</i>"
@@ -802,8 +804,7 @@ msgstr "Banjir di Jakarta seperti 2007 tapi ada perbaikan struktural"
 msgid "A flood in Jakarta in RW areas identified as flood prone"
 msgstr "Banjir di Jakarta di daerah identifikas sebagai rawan banjir"
 
-#: safe/common/dynamic_translations.py:83
-#: safe/common/dynamic_translations.py:92
+#: safe/common/dynamic_translations.py:83 safe/common/dynamic_translations.py:92
 msgid "An earthquake in Yogyakarta like in 2006"
 msgstr "Gempabumi di Yogyakarta seperti 2006"
 
@@ -1455,19 +1456,21 @@ msgstr "Pasca pemrosesan"
 #: safe/impact_functions/earthquake/itb_earthquake_fatality_model.py:242
 #, python-format
 msgid "Are there enough victim identification units available for %s people?"
-msgstr ""
+msgstr "Apakah unit identifikasi korban yang tersedia cukup untuk %s orang?"
 
 #: safe/impact_functions/earthquake/itb_earthquake_fatality_model.py:246
 #, python-format
 msgid "Are there enough shelters and relief items available for %s people?"
 msgstr ""
+"Apakah tempat penampungan dan barang-barang yang tersedia cukup untuk %s "
+"orang?"
 
 #: safe/impact_functions/inundation/flood_population_evacuation.py:141
 #, python-format
 msgid "Total population: %s"
-msgstr ""
+msgstr "Jumlah Penduduk: %s"
 
 #: safe/impact_functions/volcanic/volcano_population_evacuation_polygon_hazard.py:225
 #, python-format
 msgid "Total population %s in the viewable area"
-msgstr ""
+msgstr "Jumlah populasi %s pada area terlihat "
