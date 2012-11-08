@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-24 23:26+0200\n"
+"POT-Creation-Date: 2012-11-08 14:42+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,18 +16,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Language: id_ID\n"
-"X-Source-Language: en\n"
-
-msgid "Hello!"
-msgstr "Hi!"
-
-msgid "Hello2!"
-msgstr "Hi2!"
-
-msgid "Number of"
-msgstr "Jumlah"
 
 #: safe/engine/impact_functions_for_testing/BNPB_earthquake_guidelines.py:130
 #: safe/impact_functions/earthquake/itb_building_impact_model.py:183
@@ -38,12 +26,6 @@ msgstr "Jumlah"
 #: safe/impact_functions/volcanic/volcano_building_impact.py:133
 msgid "All"
 msgstr "Semua"
-
-msgid "Closed"
-msgstr "Ditutup"
-
-msgid "Opened"
-msgstr "Dibuka"
 
 #: extras/retired_impact_functions/tsunami_building_impact.py:120
 #: safe/impact_functions/earthquake/itb_building_impact_model.py:189
@@ -141,19 +123,10 @@ msgstr "Sedang"
 msgid "High"
 msgstr "Tinggi"
 
-msgid "OK"
-msgstr "OK"
-
 #: safe/impact_functions/inundation/flood_OSM_building_impact.py:249
 #: safe/impact_functions/inundation/flood_road_impact_experimental.py:92
 msgid "Flooded"
 msgstr "Kebanjiran"
-
-msgid "Temporarily Closed"
-msgstr "Ditutup sementara"
-
-msgid "Based on BNPB Perka 2 - 2012"
-msgstr "Berdasarkan Perka 2 BNPB - 2012"
 
 #: safe/impact_functions/core.py:591
 #: safe/impact_functions/generic/categorised_hazard_building_impact.py:100
@@ -178,19 +151,10 @@ msgstr "Dampak"
 msgid "Number of buildings"
 msgstr "Jumlah bangunan"
 
-msgid "Be inundated"
-msgstr "Tergenang"
-
 #: safe/impact_functions/inundation/flood_OSM_building_impact.py:153
 #: safe/impact_functions/inundation/flood_road_impact_experimental.py:80
 msgid "Building type"
 msgstr "Jenis bangunan"
-
-msgid "Be temporarily closed"
-msgstr "Ditutup sementara"
-
-msgid "Status"
-msgstr "Status"
 
 #: extras/retired_impact_functions/flood_population_evacuation_worldbank_request.py:27
 #: safe/impact_functions/inundation/flood_population_evacuation_polygon_hazard.py:26
@@ -199,13 +163,9 @@ msgstr "Status"
 msgid "Need evacuation"
 msgstr "Perlu evakuasi"
 
-#, python-format
-msgid "Assumptions"
-msgstr "Anggapan"
-
 #: safe/impact_functions/inundation/flood_OSM_building_impact.py:235
 msgid "Buildings are said to be flooded when "
-msgstr "Bangunan dikatakan banjir ketika "
+msgstr "Bangunan dikatakan terkena banjir ketika "
 
 #: safe/impact_functions/inundation/flood_OSM_building_impact.py:237
 #, python-format
@@ -220,9 +180,6 @@ msgstr "berada di area yang ditandai sebagai rawan banjir"
 #: safe/impact_functions/inundation/flood_road_impact_experimental.py:90
 msgid "Not Flooded"
 msgstr "Tidak terkena banjir"
-
-msgid "Open"
-msgstr "Buka"
 
 #: extras/retired_impact_functions/flood_population_evacuation_worldbank_request.py:90
 #: safe/impact_functions/inundation/flood_population_evacuation_polygon_hazard.py:122
@@ -290,7 +247,7 @@ msgstr "Minimum bantuan per minggu dari perka 7 BNPB/2008"
 #: safe/impact_functions/earthquake/itb_earthquake_fatality_model.py:265
 #: safe/impact_functions/inundation/flood_population_evacuation.py:158
 msgid "People in need of evacuation"
-msgstr "Penduduk yang mungkin perlu dievakuasi"
+msgstr "Penduduk yang perlu dievakuasi"
 
 #: extras/retired_impact_functions/flood_population_evacuation_worldbank_request.py:122
 #: safe/impact_functions/generic/categorised_hazard_population.py:141
@@ -304,9 +261,6 @@ msgstr "Kepadatan Penduduk"
 #, python-format
 msgid "Population which %s"
 msgstr "Penduduk yang %s"
-
-msgid "People need evacuation if flood levels exceed %(eps) m"
-msgstr "Penduduk perlu evakuasi jika banjir lebih dari %(eps) m"
 
 #: extras/retired_impact_functions/flood_population_evacuation_worldbank_request.py:114
 #, python-format
@@ -334,28 +288,13 @@ msgstr "Bangunan terendam"
 msgid "Total population: %i"
 msgstr "Jumlah Penduduk: %i"
 
-msgid "Levels of impact are defined by BNPB's <i>Pengkajian Risiko Bencana</i>"
-msgstr "Tingkat dampak ditentukan oleh BNPB <i>Pengkajian Risiko Bencana</i>"
-
 #: extras/retired_impact_functions/tsunami_building_impact.py:129
 msgid "Tsunami height"
 msgstr "Ketinggian Tsunami"
 
-#, python-format
-msgid "Buildings will need to close if flood levels exceed %.1f m"
-msgstr "Bangunan perlu ditutup kalau banjir lebih dari %.1f m"
-
-#, python-format
-msgid "In the event of <i>%s</i> how many <i>%s</i> might <i>%s</i>"
-msgstr ""
-"Apabila terjadi <i>%s</i> berapa banyak <i>%s</i> yang mungkin <i>%s</i>"
-
 #: safe/impact_functions/earthquake/padang_building_impact_model.py:141
 msgid "Earthquake damage to buildings"
 msgstr "Kerusakan bangunan akibat gempa"
-
-msgid "Buildings that need to close due flooding"
-msgstr "Bangunan yang perlu ditutup sementara karena banjir"
 
 #: safe/impact_functions/earthquake/itb_building_impact_model.py:84
 #: safe/impact_functions/earthquake/padang_building_impact_model.py:59
@@ -379,16 +318,10 @@ msgstr ""
 "Batu pondasi tanpa perkuatan diasumsikan di mana tidak ada informasi "
 "struktural tersedia."
 
-msgid "Be affected by ground shaking"
-msgstr "Dipengaruhi oleh getaran tanah"
-
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_org.py:159
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_org.py:170
 msgid "Groundshaking (MMI)"
 msgstr "Getaran tanah (MMI)"
-
-msgid "# people impacted"
-msgstr "# orang terdampak"
 
 #: safe/engine/impact_functions_for_testing/earthquake_impact_on_women.py:119
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_configurable.py:194
@@ -409,13 +342,14 @@ msgstr "Model Fatality adalah dari Institut Teknologi Bandung 2012."
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_org.py:201
 #: safe/impact_functions/earthquake/itb_earthquake_fatality_model.py:274
 msgid "Earthquake impact to population"
-msgstr "Gempa dampak terhadap populasi"
+msgstr "Dampak gempabumi terhadap populasi"
 
 #: safe/common/dynamic_translations.py:58
 msgid "DKI buildings"
 msgstr "Bangunan DKI"
 
-#: safe/common/dynamic_translations.py:60 safe/common/dynamic_translations.py:61
+#: safe/common/dynamic_translations.py:60
+#: safe/common/dynamic_translations.py:61
 msgid "Jakarta 2007 flood"
 msgstr "Banjir di Jakarta seperti tahun 2007"
 
@@ -444,24 +378,9 @@ msgstr "Kedalaman banjir Jakarta (desain)"
 msgid "Flood Depth (current) Jakarta"
 msgstr "Kedalaman banjir Jakarta (saat ini)"
 
-msgid "Yogyakarta 2006 earthquake"
-msgstr "Gempa Yogyakarta 2006"
-
 #: safe/common/dynamic_translations.py:84
 msgid "Indonesian Earthquake Hazard Map"
 msgstr "Peta Rawan Gempa Indonesia"
-
-msgid "Maumere tsunami inundation"
-msgstr "Genangan tsunami Maumere"
-
-msgid "Sumatran fault Mw 7.8 scenario"
-msgstr "Skenario gempabumi sesar Sumatra Mw 7.8"
-
-msgid "Mentawai fault Mw 9.0 scenario"
-msgstr "Skenario Gempabumi sesar Mentawai Mw 9.0"
-
-msgid "Shakemap Padang 2009"
-msgstr "Shakemap Padang 2009"
 
 #: safe/common/dynamic_translations.py:95
 msgid "OSM building footprints"
@@ -521,7 +440,7 @@ msgstr "kantor"
 
 #: safe/common/dynamic_translations.py:121
 msgid "clinic"
-msgstr "puskesmas"
+msgstr "klinik"
 
 #: safe/common/dynamic_translations.py:122
 msgid "terrace"
@@ -581,7 +500,7 @@ msgstr "kantor pemerintah"
 
 #: safe/common/dynamic_translations.py:136
 msgid "church"
-msgstr "Gereja"
+msgstr "gereja"
 
 #: safe/common/dynamic_translations.py:137
 msgid "hotel"
@@ -597,24 +516,12 @@ msgstr "lainnya"
 
 #: safe/common/dynamic_translations.py:140
 msgid "fire station"
-msgstr "pos kebakaran"
-
-msgid "Padang 2009 scenario"
-msgstr "Skenario Padang 2009"
-
-msgid "Yogya 2006 scenario"
-msgstr "Skenario Yogya 2006"
+msgstr "pos pemadam kebakaran"
 
 #: safe/engine/impact_functions_for_testing/earthquake_impact_on_women.py:158
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_org.py:232
 msgid "Estimated fatalities"
 msgstr "Perkiraan korban jiwa"
-
-msgid "Lembang fault scenario"
-msgstr "Skenario sesar Lembang"
-
-msgid "Jakarta flood like 2007 with structural improvements"
-msgstr "Banjir 2007 dengan perbaikan struktural"
 
 #: safe/engine/impact_functions_for_testing/earthquake_impact_on_women.py:124
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_configurable.py:200
@@ -636,11 +543,8 @@ msgstr "Daftar aksi:"
 #, python-format
 msgid "Unknown hazard type %s. Must be either \"depth\" or \"floodprone\""
 msgstr ""
-"Jenis bahaya %s tidak diketahui. Harus berupa \"kedalaman banjir\" atau "
+"Jenis ancaman %s tidak diketahui. Harus berupa \"kedalaman banjir\" atau "
 "\"rawan banjir\""
-
-msgid "All buildings"
-msgstr "Semua bangunan"
 
 #: safe/impact_functions/inundation/flood_road_impact_experimental.py:81
 msgid "Temporarily closed"
@@ -653,9 +557,6 @@ msgstr "Apakah fasilitas yang penting masih terbuka?"
 #: safe/impact_functions/inundation/flood_OSM_building_impact.py:206
 msgid "Breakdown by building type"
 msgstr "Perincian menurut jenis bangunan"
-
-msgid "Be affected by earthquake"
-msgstr "Terkena dampak gempa"
 
 #: safe/engine/impact_functions_for_testing/earthquake_impact_on_women.py:127
 msgid "Number of women displaced"
@@ -697,7 +598,7 @@ msgstr "Jumlah penduduk"
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_org.py:197
 #: safe/impact_functions/earthquake/itb_earthquake_fatality_model.py:270
 msgid "Population numbers rounded to nearest 1000."
-msgstr "Jumlah penduduk dibulatkan menjadi terdekat 1000."
+msgstr "Jumlah penduduk dibulatkan menjadi 1000 terdekat."
 
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_org.py:86
 msgid "Die"
@@ -712,10 +613,6 @@ msgstr "Menderita karena gender"
 #, python-format
 msgid "Are there enough victim identification units available for %i people?"
 msgstr "Apakah unit identifikasi korban yang tersedia cukup untuk %i orang?"
-
-#, python-format
-msgid "Are there enough shelters available for %i people?"
-msgstr "Apakah tempat penampungan yang tersedia cukup untuk %i orang?"
 
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_configurable.py:277
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_configurable.py:282
@@ -738,26 +635,18 @@ msgstr "Peta menunjukkan kepadatan penduduk yang memerlukan evakuasi"
 #: extras/retired_impact_functions/flood_population_evacuation_worldbank_request.py:116
 #, python-format
 msgid "People in 50cm to 1m of water: %i"
-msgstr "Orang-orang di 50cm ke 1m air: %i"
+msgstr "Orang-orang di 50cm sampai 1m air: %i"
 
 #: extras/retired_impact_functions/flood_population_evacuation_worldbank_request.py:117
 #, python-format
 msgid "People in 30cm to 50cm of water: %i"
-msgstr "Orang-orang di 30cm ke 50cm air: %i"
-
-#, python-format
-msgid ""
-"Could not interpolate from raster layer %s to vector layer %s. Error "
-"message: %s"
-msgstr ""
-"Tidak bisa interpolasi dari %s lapisan raster ke %s lapisan vektor. Pesan "
-"kesalahan: %s"
+msgstr "Orang-orang di 30cm sampai 50cm air: %i"
 
 #: safe/impact_functions/core.py:356
 #, python-format
 msgid ""
-"In the event of <i>%(hazard)s</i> how many <i>%(exposure)s</i> might "
-"<i>%(impact)s</i>"
+"In the event of <i>%(hazard)s</i> how many <i>%(exposure)s</i> might <i>"
+"%(impact)s</i>"
 msgstr ""
 "Apabila terjadi <i>%(hazard)s</i> berapa banyak <i>%(exposure)s</i> yang "
 "mungkin <i>%(impact)s</i>"
@@ -770,9 +659,6 @@ msgid ""
 msgstr ""
 "Tidak bisa interpolasi dari %(raster)s lapisan raster ke %(vector)s lapisan "
 "vektor. Pesan error: %(error)s"
-
-msgid "THIS SHOULD SHOW UP IN THE GUI"
-msgstr "INI SEHARUSNYA MUNCUL PADA TAMPILAN"
 
 #: safe/impact_functions/generic/categorised_hazard_population.py:137
 #: safe/impact_functions/inundation/flood_population_evacuation.py:168
@@ -804,7 +690,8 @@ msgstr "Banjir di Jakarta seperti 2007 tapi ada perbaikan struktural"
 msgid "A flood in Jakarta in RW areas identified as flood prone"
 msgstr "Banjir di Jakarta di daerah identifikas sebagai rawan banjir"
 
-#: safe/common/dynamic_translations.py:83 safe/common/dynamic_translations.py:92
+#: safe/common/dynamic_translations.py:83
+#: safe/common/dynamic_translations.py:92
 msgid "An earthquake in Yogyakarta like in 2006"
 msgstr "Gempabumi di Yogyakarta seperti 2006"
 
@@ -871,9 +758,6 @@ msgstr ""
 msgid "People affected by flood prone areas"
 msgstr "Orang-orang terkena dampak daerah rawan banjir"
 
-msgid "Nil"
-msgstr "Nol"
-
 #: safe/impact_functions/inundation/flood_population_evacuation_polygon_hazard.py:184
 #: safe/impact_functions/volcanic/volcano_population_evacuation_polygon_hazard.py:258
 msgid "Population Count"
@@ -890,9 +774,6 @@ msgstr "Judul"
 #: safe/impact_functions/core.py:591
 msgid "ID"
 msgstr "ID"
-
-msgid "Requirements"
-msgstr "Persyaratan"
 
 #: safe/impact_functions/core.py:660
 msgid "Available Impact Functions"
@@ -919,10 +800,6 @@ msgstr "Catatan"
 #: safe/impact_functions/inundation/flood_population_evacuation.py:148
 msgid "Detailed breakdown"
 msgstr "Perincian lebih detil"
-
-#, python-format
-msgid "People in %.1f m to %.1f m of water: %i"
-msgstr "Orang-orang di %.1f m ke %.1f m air: %i"
 
 #: safe/impact_functions/inundation/flood_population_evacuation.py:142
 #, python-format
@@ -960,29 +837,22 @@ msgstr "Terkena dampak"
 #: safe/impact_functions/generic/categorised_hazard_building_impact.py:108
 msgid "Categorised hazard has only 3 classes, high, medium and low."
 msgstr ""
-"Bahaya terkategorikan hanya memiliki 3 kelas, tinggi, sedang, dan rendah."
+"Ancaman terkategorikan hanya memiliki 3 kelas, tinggi, sedang, dan rendah."
 
 #: safe/impact_functions/generic/categorised_hazard_building_impact.py:113
 msgid "Categorised hazard impact on buildings"
-msgstr "Dampak bahaya terkategorikan pada bangunan"
-
-msgid "be affected"
-msgstr "terkena dampak"
+msgstr "Dampak ancaman terkategorikan pada bangunan"
 
 #: safe/impact_functions/volcanic/volcano_population_evacuation_polygon_hazard.py:207
 msgid "Map shows population affected in each of volcano hazard polygons."
 msgstr ""
-"Peta menunjukkan populasi yang terkena dampak di setiap wilayah rawan bahaya "
-"letusan gunung berapi."
-
-#, python-format
-msgid "Total population %i in view port"
-msgstr "Jumlah populasi %i di jendela kerja"
+"Peta menunjukkan populasi yang terkena dampak di setiap wilayah rawan "
+"ancaman letusan gunung berapi."
 
 #: safe/impact_functions/volcanic/volcano_population_evacuation_polygon_hazard.py:227
 msgid "People need evacuation if they are within the volcanic hazard zones."
 msgstr ""
-"Orang-orang perlu evakuasi kalau daerah identifikas sebagai rawan bahaya "
+"Orang-orang perlu evakuasi kalau daerah identifikas sebagai rawan ancaman "
 "letusan gunung berapi."
 
 #: safe/impact_functions/volcanic/volcano_population_evacuation_polygon_hazard.py:230
@@ -991,7 +861,7 @@ msgstr "Penduduk yang terkena dampak daerah rawan bahaya letusan gunung berapi"
 
 #: safe/impact_functions/volcanic/volcano_population_evacuation_polygon_hazard.py:264
 msgid "Population affected by volcanic hazard zone"
-msgstr "Penduduk terkena dampak daerah rawan bahaya letusan gunung berapi"
+msgstr "Penduduk terkena dampak daerah rawan ancaman letusan gunung berapi"
 
 #: safe/impact_functions/inundation/flood_OSM_building_impact.py:216
 msgid "Which structures have warning capacity (eg. sirens, speakers, etc.)?"
@@ -1064,7 +934,7 @@ msgstr "Sub kategori"
 
 #: safe/impact_functions/core.py:592
 msgid "Layer type"
-msgstr "Tipe lapisan"
+msgstr "Jenis lapisan"
 
 #: safe/impact_functions/core.py:592
 msgid "Data type"
@@ -1073,14 +943,6 @@ msgstr "Jenis data"
 #: safe/impact_functions/core.py:593
 msgid "Unit"
 msgstr "Satuan"
-
-#, python-format
-msgid "Total population %i in in the viewable area"
-msgstr "Jumlah populasi %i pada area terlihat"
-
-#, python-format
-msgid "Total population %i in the viewable area"
-msgstr "Jumlah populasi %i pada area terlihat "
 
 #: safe/impact_functions/generic/categorised_hazard_population.py:29
 msgid "Be impacted"
@@ -1103,8 +965,8 @@ msgstr "Kumulatif"
 #: safe/impact_functions/volcanic/volcano_building_impact.py:141
 msgid "Map shows buildings affected in each of volcano hazard polygons."
 msgstr ""
-"Peta menunjukkan bangunan yang terkena dampak di setiap wilayah rawan bahaya "
-"letusan gunung berapi."
+"Peta menunjukkan bangunan yang terkena dampak di setiap wilayah rawan "
+"ancaman letusan gunung berapi."
 
 #: safe/impact_functions/volcanic/volcano_building_impact.py:147
 #, python-format
@@ -1118,117 +980,12 @@ msgstr "Hanya bangunan yang tersedia di Open Street Map yang diperhitungkan."
 #: safe/impact_functions/volcanic/volcano_building_impact.py:152
 #: safe/impact_functions/volcanic/volcano_building_impact.py:186
 msgid "Buildings affected by volcanic hazard zone"
-msgstr "Bangunan yang terkena dampak daerah rawan bahaya letusan gunung berapi"
+msgstr ""
+"Bangunan yang terkena dampak daerah rawan ancaman letusan gunung berapi"
 
 #: safe/impact_functions/volcanic/volcano_building_impact.py:180
 msgid "Building Count"
 msgstr "Jumlah Bangunan"
-
-msgid ""
-"Lookup table mapping layer titles to translatable strings\n"
-"\n"
-"Layer titles are kept in the associated keywords files. However,\n"
-"these files are not seen by the internationalisation system and\n"
-"can therefore not be translated.\n"
-"\n"
-"To achieve this for selected titles, we maintain a lookup table of the form\n"
-"\n"
-"{string: translatable_string}\n"
-"\n"
-"where string e.g. comes from the keywords file or attribute names/values\n"
-"in datasets and translatable_string is the string that will appear as the\n"
-"translated at runtime.\n"
-"\n"
-"e.g (using a neutral symbol)\n"
-"{'title1': tr('Jakarta 2007 flood')}\n"
-"\n"
-"or (using existing title)\n"
-"{'Schools': tr('Schools')}\n"
-"\n"
-"or (attribute value)\n"
-"{'school': tr('school')}\n"
-"\n"
-"With the underscore function, the specified string will be seen by the\n"
-"translation system and can appear in the supported languages as with\n"
-"other strings in SAFE.\n"
-"\n"
-"Note, this module does *not* provide translations! Rather it provides\n"
-"mappings between strings expected at runtime to strings seen by the\n"
-"existing translation systems.\n"
-"\n"
-"To use:\n"
-"\n"
-"This module contains words and phrases that need to be translatable but\n"
-"would not normally be available in code for example, that originate from\n"
-"a dataset or external source.\n"
-"\n"
-"Just put your translations here, and it will be available to the tr "
-"function\n"
-"but never import this module or the functions in it!\n"
-"\n"
-"\n"
-"\n"
-msgstr ""
-"Tabel pencarian memetakan judul lapisan pada untaian yang bisa "
-"ditranslasikan\n"
-"\n"
-"Judul lapisan disimpan di berkas kata kunci yang berasosiasi. Tetapi, berkas "
-"ini tidak terdeteksi oleh sistem internasionalisasi sehingga tidak dapat "
-"ditranslasikan.\n"
-"\n"
-"Untuk memperolehnya untuk judul terpilih, kita membuat tabel pencarian "
-"dengan format\n"
-"\n"
-"{untaian: untaian_tertranslasikan}\n"
-"\n"
-"where string e.g. comes from the keywords file or attribute names/values\n"
-"in datasets and translatable_string is the string that will appear as the\n"
-"translated at runtime.\n"
-"\n"
-"e.g (using a neutral symbol)\n"
-"{'title1': tr('Jakarta 2007 flood')}\n"
-"\n"
-"or (using existing title)\n"
-"{'Schools': tr('Schools')}\n"
-"\n"
-"or (attribute value)\n"
-"{'school': tr('school')}\n"
-"\n"
-"With the underscore function, the specified string will be seen by the\n"
-"translation system and can appear in the supported languages as with\n"
-"other strings in SAFE.\n"
-"\n"
-"Note, this module does *not* provide translations! Rather it provides\n"
-"mappings between strings expected at runtime to strings seen by the\n"
-"existing translation systems.\n"
-"\n"
-"To use:\n"
-"\n"
-"This module contains words and phrases that need to be translatable but\n"
-"would not normally be available in code for example, that originate from\n"
-"a dataset or external source.\n"
-"\n"
-"Just put your translations here, and it will be available to the tr "
-"function\n"
-"but never import this module or the functions in it!\n"
-"\n"
-"\n"
-
-msgid ""
-"These listed here so they get translated apriori to loading data.\n"
-"    "
-msgstr ""
-"Berikut ini didaftar di sini sehingga mereka bisa ditranslasikan dengan "
-"benar untuk memuat data."
-
-msgid "Hello world"
-msgstr "Hallo dunia"
-
-#: safe/common/dynamic_translations.py:63
-msgid "Jakarta flood like 2007 with pump failure at Pluit Ancol and Sunter"
-msgstr ""
-"Banjir Jakarta seperti tahun 2007 dengan kegagalan pompa di Pluit Ancol dan "
-"Sunter"
 
 #: safe/common/dynamic_translations.py:116
 msgid "A volcano eruption"
@@ -1252,12 +1009,12 @@ msgstr "# orang terkena"
 
 #: safe/engine/impact_functions_for_testing/itb_fatality_model_org.py:171
 msgid "# Fatalities"
-msgstr "Korban jiwa"
+msgstr "# Korban jiwa"
 
 #: safe/impact_functions/earthquake/earthquake_building_impact.py:142
 #: safe/impact_functions/earthquake/earthquake_building_impact.py:159
 msgid "Hazard Level"
-msgstr "Tingkatan bencana"
+msgstr "Tingkatan ancaman"
 
 #: safe/impact_functions/earthquake/earthquake_building_impact.py:143
 #: safe/impact_functions/earthquake/earthquake_building_impact.py:160
@@ -1277,7 +1034,7 @@ msgstr "Harga isi ($M)"
 msgid ""
 "High hazard is defined as shake levels greater than %i on the MMI scale."
 msgstr ""
-"Bahaya tinggi didefinisikan sebagai getaran tanah lebih dari %i pada skala "
+"Ancaman tinggi didefinisikan sebagai getaran tanah lebih dari %i pada skala "
 "MMI."
 
 #: safe/impact_functions/earthquake/earthquake_building_impact.py:169
@@ -1285,7 +1042,7 @@ msgstr ""
 msgid ""
 "Medium hazard is defined as shake levels between %i and %i on the MMI scale."
 msgstr ""
-"Bahaya menengah didefinisikan sebagai getaran tanah antara %i dan %i pada "
+"Ancaman menengah didefinisikan sebagai getaran tanah antara %i dan %i pada "
 "skala MMI."
 
 #: safe/impact_functions/earthquake/earthquake_building_impact.py:172
@@ -1293,7 +1050,7 @@ msgstr ""
 msgid ""
 "Low hazard is defined as shake levels between %i and %i on the MMI scale."
 msgstr ""
-"Bahaya rendah didefinisikan sebagai getaran tanah antara %i dan %i pada "
+"Ancaman rendah didefinisikan sebagai getaran tanah antara %i dan %i pada "
 "skala MMI."
 
 #: safe/impact_functions/earthquake/earthquake_building_impact.py:176
@@ -1352,7 +1109,7 @@ msgstr "Bangunan di Jakarta"
 msgid "Buildings in Jakarta"
 msgstr "Gedung di Jakarta"
 
-#: safe/engine/core.py:81
+#: safe/engine/core.py:83
 msgid "Not specified"
 msgstr "Tidak ditentukan"
 
@@ -1439,12 +1196,6 @@ msgstr "Bangunan-bangunan penting"
 msgid "Essential Buildings"
 msgstr "Bangunan-bangunan penting"
 
-msgid "thresholds"
-msgstr "ambang batas"
-
-msgid "postprocessors"
-msgstr "pasca pemrosesan"
-
 #: safe/common/dynamic_translations.py:144
 msgid "Thresholds"
 msgstr "Ambang batas"
@@ -1474,3 +1225,21 @@ msgstr "Jumlah Penduduk: %s"
 #, python-format
 msgid "Total population %s in the viewable area"
 msgstr "Jumlah populasi %s pada area terlihat "
+
+msgid "Hello!"
+msgstr "Hi!"
+
+msgid "Yogyakarta 2006 earthquake"
+msgstr "Gempabumi Yogyakarta 2006"
+
+msgid "Maumere tsunami inundation"
+msgstr "Genangan tsunami Maumere"
+
+msgid "Only buildings available in OpenStreetMap are considered."
+msgstr "Hanya bangunan yang tersedia di OpenStreetMap yang diperhitungkan."
+
+#: safe/common/dynamic_translations.py:63
+msgid "Jakarta flood like 2007 with pump failure at Pluit Ancol and Sunter"
+msgstr ""
+"Banjir Jakarta seperti tahun 2007 dengan pompa di Pluit, Ancol dan Sunter "
+"rusak"
