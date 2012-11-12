@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="id_ID" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.0" language="id_ID">
 <context>
     <name>@default</name>
     <message>
@@ -818,11 +819,6 @@ ke %s: %s</translation>
         <translation>banjir [kaki]</translation>
     </message>
     <message>
-        <location filename="keywords_dialog.py" line="74"/>
-        <source>roads</source>
-        <translation>jalan</translation>
-    </message>
-    <message>
         <location filename="keywords_dialog.py" line="79"/>
         <source>tephra [kg2/m2]</source>
         <translation>tephra [kg2/m2]</translation>
@@ -903,6 +899,11 @@ ke %s: %s</translation>
         <location filename="keywords_dialog.py" line="67"/>
         <source>InaSAFE %1 Keywords Editor</source>
         <translation>InaSAFE %1 Editor kata kunci</translation>
+    </message>
+    <message>
+        <location filename="keywords_dialog.py" line="74"/>
+        <source>road</source>
+        <translation>jalan</translation>
     </message>
 </context>
 <context>
