@@ -59,7 +59,7 @@ class PluginTest(unittest.TestCase):
         """Library translations are working."""
         # Import this late so that i18n setup is already in place
         from safe.common.utilities import ugettext as tr
-        myUntranslatedString = 'Temporarily Closed'
+        myUntranslatedString = 'Temporarily closed'
 
         # Test indonesian too
         myParent = QWidget()
