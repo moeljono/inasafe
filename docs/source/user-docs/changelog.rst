@@ -7,8 +7,25 @@ Whats new?
 Changelog for version 1.0.1
 ---------------------------
 
-* Fix https://github.com/AIFDR/inasafe/issues/374
-* Fix https://github.com/AIFDR/inasafe/issues/375
+* Fix https://github.com/AIFDR/inasafe/issues/374 - added exception handler
+  for density scaling.
+* Fix https://github.com/AIFDR/inasafe/issues/375 - fix issue with legend width.
+* Fix https://github.com/AIFDR/inasafe/issues/373 - formatting changes break
+  some tests.
+* Use QImage for render checking tests and fix scaling issue with legend fonts.
+* Logging improvements.
+* Improved exception handling.
+* Soft wrap pdf output paths to improve formatting of long paths in dock.
+* Fixed issue https://github.com/AIFDR/inasafe/issues/390 - fix OSX issues
+  with clipping. Use QProcess now for all gui shell calls.
+* Fixed issue https://github.com/AIFDR/inasafe/issues/394 - resolves timedelta
+  issue for users with python 2.6.
+* Fixed issue https://github.com/AIFDR/inasafe/issues/395 - fix inabilty to
+  cancel map print.
+* Fixed issue https://github.com/AIFDR/inasafe/issues/385 - fix print failure
+  in some cases on windows due to permissions.
+* Better handling of bad input from users which can cause a syntax error
+  exception.
 
 Changelog for version 1.0.0
 ---------------------------
