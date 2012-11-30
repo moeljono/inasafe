@@ -2253,8 +2253,19 @@ class Dock(QtGui.QDockWidget, Ui_DockBase):
         myTableFilename = os.path.splitext(myMapPdfFilePath)[0] + '_table.pdf'
         myHtmlRenderer = HtmlRenderer(thePageDpi=myMap.pageDpi)
         myKeywords = self.keywordIO.readKeywords(self.iface.activeLayer())
-        myHtmlPdfPath = myHtmlRenderer.printImpactTable(
-            myKeywords, theFilename=myTableFilename)
+
+
+	try:
+	    myHtmlPdfPath = myHtmlRenderer.printImpactTable(
+        	    myKeywords, theFilename=myTableFilename)
+        except OSError, e:
+            myContext = ('There is permission issue. Please re-run QGIS as '
+                            'administrator. Save your work if needed.')
+            myReport = getExceptionWithStacktrace(e, html=True,
+                                                  context=myContext)
+            if myReport is not None:
+                self.displayHtml(myReport)
+            return
 
         try:
             myMap.printToPdf(myMapPdfFilePath)
