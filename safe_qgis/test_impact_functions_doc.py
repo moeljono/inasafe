@@ -14,7 +14,7 @@ __author__ = 'ismailsunni@yahoo.co.id'
 __date__ = '14/09/2012'
 __copyright__ = ('Copyright 2012, Australia Indonesia Facility for '
                  'Disaster Reduction')
-import sys
+#import sys
 import unittest
 
 from PyQt4 import QtGui
