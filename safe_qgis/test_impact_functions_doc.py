@@ -116,7 +116,8 @@ class ImpactFunctionsDocTest(unittest.TestCase):
                     'is pressed.')
         assert expectedTable == realTableReset, msgReset
 
-    @unittest.skipIf(sys.platform.startswith("win"), "Fails on Windows")
+    #@unittest.skipIf(sys.platform.startswith("win"), "Fails on Windows")
+    @unittest.skip
     def test_showHelp(self):
         """Test that help button works"""
         myDialog = ImpactFunctionsDoc(PARENT)
