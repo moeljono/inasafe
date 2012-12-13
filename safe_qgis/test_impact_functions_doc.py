@@ -10,18 +10,19 @@ Contact : ole.moller.nielsen@gmail.com
      (at your option) any later version.
 
 """
-from PyQt4 import QtGui
-
 __author__ = 'ismailsunni@yahoo.co.id'
 __date__ = '14/09/2012'
 __copyright__ = ('Copyright 2012, Australia Indonesia Facility for '
                  'Disaster Reduction')
+import sys
 import unittest
-from unittest import expectedFailure
-from impact_functions_doc import ImpactFunctionsDoc
-from safe_qgis.utilities_test import getQgisTestApp
+
+from PyQt4 import QtGui
 from PyQt4.QtTest import QTest
 from PyQt4 import QtCore
+
+from impact_functions_doc import ImpactFunctionsDoc
+from safe_qgis.utilities_test import getQgisTestApp
 
 QGISAPP, CANVAS, IFACE, PARENT = getQgisTestApp()
 
@@ -115,7 +116,7 @@ class ImpactFunctionsDocTest(unittest.TestCase):
                     'is pressed.')
         assert expectedTable == realTableReset, msgReset
 
-    @expectedFailure
+    @unittest.skipIf(sys.platform.startswith("win"), "Fails on Windows")
     def test_showHelp(self):
         """Test that help button works"""
         myDialog = ImpactFunctionsDoc(PARENT)

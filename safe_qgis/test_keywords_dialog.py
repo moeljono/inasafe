@@ -20,7 +20,6 @@ import unittest
 import sys
 import os
 import shutil
-from unittest import expectedFailure
 
 from safe.engine.core import unique_filename
 
@@ -145,7 +144,7 @@ class KeywordsDialogTest(unittest.TestCase):
         """Destroy the dialog after each test"""
         clearLayers()
 
-    @expectedFailure
+    @unittest.skipIf(sys.platform.startswith("win"), "Fails on Windows")
     def test_showHelp(self):
         """Test that help button works"""
         myDialog = KeywordsDialog(PARENT, IFACE)
