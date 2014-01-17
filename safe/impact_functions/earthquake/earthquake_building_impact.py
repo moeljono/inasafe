@@ -27,6 +27,7 @@ class EarthquakeBuildingImpactFunction(FunctionProvider):
 
     def __init__(self):
         """Constructor."""
+        #pylint: disable=W0233
         FunctionProvider.__init__(self)
 
     target_field = 'Shake_cls'
