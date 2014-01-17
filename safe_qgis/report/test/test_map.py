@@ -87,6 +87,7 @@ class MapTest(unittest.TestCase):
             446839,  # Windows 8 AMD64 post 27 Aug 2013
             234138,  # OSX 10.8
             444421,  # Slackware64 14.0
+            448434,  # New jenkins server in docker
         ]
         myMessage = '%s\nExpected rendered map pdf to be in %s, got %s' % (
             myPath, myExpectedSizes, mySize)
