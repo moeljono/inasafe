@@ -7,6 +7,7 @@ from qgis.core import QgsVectorLayer
 from safe_qgis.hackathon_training.working_with_vector import (
     load_layer,
     iterate_data,
+    modify_attribute_value,
     add_string_attribute,
     delete_attribute,
     write_layer_to_shapefile)
@@ -42,7 +43,34 @@ class TestWorkingWithVector(unittest.TestCase):
             os.path.dirname(__file__),
             '../../safe/test/data/boundaries/district_osm_jakarta.shp')
         layer = load_layer(vector_path, 'District OSM Jakarta')
+        # Iterate
         iterate_data(layer)
+
+    def test_modify_data(self):
+        """Test the modify_data works."""
+        # Load the layer first
+        vector_path = os.path.join(
+            os.path.dirname(__file__),
+            '../../safe/test/data/boundaries/district_osm_jakarta.shp')
+        layer = load_layer(vector_path, 'District OSM Jakarta')
+
+        # Add the attribute 'modify'
+        add_string_attribute(layer, 'modify')
+
+        # Print it
+        print 'Before modified:'
+        iterate_data(layer)
+
+        # Now modify all the 'modify' attributes
+        modify_attribute_value(layer, 'modify')
+
+        # Print it
+        print 'After modified'
+        iterate_data(layer)
+
+        # Clean the state delete the attribute 'modify' again
+        delete_attribute(layer, 'modify')
+
 
     def test_add_string_attribute(self):
         """Test the add_string_attribute function works."""

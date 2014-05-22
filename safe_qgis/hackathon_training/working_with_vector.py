@@ -89,6 +89,7 @@ def delete_attribute(layer, attribute_name):
 
     if capabilities & QgsVectorDataProvider.DeleteAttributes:
         layer.dataProvider().deleteAttributes([attribute_index])
+    layer.commitChanges()
 
 
 def iterate_data(layer):
@@ -105,6 +106,34 @@ def iterate_data(layer):
         # attributes is a list.
         # It contains all the attribute values of this feature
         print attributes
+
+
+def modify_attribute_value(layer, attribute_name):
+    """Modify the attribute value. We'll just change the value of the
+        attribute all to 'modif'
+
+    :param layer: The layer we're working on.
+    :type layer: QgsVectorLayer
+
+    :param attribute_name: The attribute name that will be modified.
+    :type attribute_name: str
+    """
+    layer.startEditing()
+    provider = layer.dataProvider()
+    capabilities = provider.capabilities()
+
+    attribute_index = provider.fieldNameIndex(attribute_name)
+    if attribute_index == -1:
+        raise Exception(
+            'Dude, you are lying to me by giving wrong attribute name!')
+
+    if capabilities & QgsVectorDataProvider.ChangeAttributeValues:
+        features = layer.getFeatures()
+        for feature in features:
+            feature_id = feature.id()
+            attributes = {attribute_index: 'modif'}
+            layer.dataProvider().changeAttributeValues({feature_id: attributes})
+    layer.commitChanges()
 
 
 def write_layer_to_shapefile(layer, path):
