@@ -12,9 +12,14 @@ Contact : ole.moller.nielsen@gmail.com
 """
 __author__ = 'gumbia'
 
+from PyQt4.QtCore import QVariant
 
 from safe.common.testing import get_qgis_app
-from qgis.core import QgsVectorLayer, QgsVectorDataProvider, QgsField
+from qgis.core import (
+    QgsVectorLayer,
+    QgsVectorDataProvider,
+    QgsField,
+    QgsVectorFileWriter)
 
 
 QGIS_APP, CANVAS, IFACE, PARENT = get_qgis_app()
@@ -46,14 +51,80 @@ def add_string_attribute(layer, attribute_name):
     :type layer: QgsVectorLayer
 
     :param attribute_name: The name of the attribute. Remember that ESRI
-        shapefile restricts the length of the attribute name to be less than 12.
+        shapefile restricts the length of the attribute name to be less than
+        or equal to 10.
     :type attribute_name: str
-
-    :return: The result layer with new attribute on it.
-    :rtype: QgsVectorLayer
     """
+    layer.startEditing()
     provider = layer.dataProvider()
     capabilities = provider.capabilities()
 
     if capabilities & QgsVectorDataProvider.AddAttributes:
-        pass
+        result = provider.addAttributes(
+            [QgsField(attribute_name, QVariant.String)])
+        if not result:
+            raise Exception(
+                'Oh no, there is something wrong when adding this new '
+                'attribute:' % attribute_name)
+    layer.commitChanges()
+
+
+def delete_attribute(layer, attribute_name):
+    """Delete an attribute with given index.
+
+    :param layer: The target we are working on.
+    :type layer: QgsVectorLayer
+
+    :param attribute_name: The attribute name that are going to be deleted.
+    :type attribute_name: str
+    """
+    layer.startEditing()
+    provider = layer.dataProvider()
+    capabilities = provider.capabilities()
+
+    attribute_index = provider.fieldNameIndex(attribute_name)
+    if attribute_index == -1:
+        raise Exception(
+            'Dude, you are lying to me by giving wrong attribute name!')
+
+    if capabilities & QgsVectorDataProvider.DeleteAttributes:
+        layer.dataProvider().deleteAttributes([attribute_index])
+
+
+def iterate_data(layer):
+    """Iterate all features in the layer.
+
+    :param layer: The layer that we're working on.
+    :type layer: QgsVectorLayer
+    """
+    features = layer.getFeatures()
+    for feature in features:
+        # fetch attributes
+        attributes = feature.attributes()
+
+        # attributes is a list.
+        # It contains all the attribute values of this feature
+        print attributes
+
+
+def write_layer_to_shapefile(layer, path):
+    """Write layer to a shapefile with given path.
+
+    :param layer: The layer that will be saved.
+    :type layer: QgsVectorLayer
+
+    :param path: The file path.
+    :type path: str
+
+    :return: Path to the result file if it's successful. Or else return False
+    :rtype: str, bool
+    """
+    error = QgsVectorFileWriter.writeAsVectorFormat(
+        layer, path, "CP1250", None, "ESRI Shapefile")
+
+    if error == QgsVectorFileWriter.NoError:
+        return path
+
+    return False
+
+
