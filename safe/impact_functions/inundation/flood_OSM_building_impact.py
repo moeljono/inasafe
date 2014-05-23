@@ -113,7 +113,7 @@ class FloodBuildingImpactFunction(FunctionProvider):
 
     # Function documentation
     target_field = 'INUNDATED'
-    title = tr('Be flooded')
+    title = tr('DaLA Be flooded')
     synopsis = tr(
         'To assess the impacts of (flood or tsunami) inundation on building '
         'footprints originating from OpenStreetMap (OSM).')
